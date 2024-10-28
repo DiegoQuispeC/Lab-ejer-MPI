@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
     if (rank == 0) {
         data = (int *)malloc(data_size * sizeof(int));
         for (int i = 0; i < data_size; i++) {
-            data[i] = rand() % (MAX_VALUE );
+            data[i] = rand() % (MAX_VALUE +1);
         }
     }
 
